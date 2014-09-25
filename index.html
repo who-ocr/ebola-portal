@@ -1,0 +1,1356 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>WHO Ebola Response</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animated-chart.css" rel="stylesheet" />
+    <link href="public.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="js/libs/html5shiv.js"></script>
+        <script src="js/libs/respond.min.js"></script>
+        <script src="js/libs/es5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand layer" href="#" data-zoom="3" data-layer="all">
+                        <img src="img/who-logo-prp.gif" alt="who-logo-prp" height="60">
+                        <span class="title">Ebola Portal</span>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse" role="navigation">
+                    <ul class="nav nav-pills navbar-right" id="nav-main">
+                        <li>
+                            <a href="#" data-page="home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" data-page="response">Operations</a>
+                        </li>
+                        <li>
+                            <a href="#" data-page="resources">Funding</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="http://who.int/about/en/" target="_blank" data-page="_blank">About</a>
+                        </li>
+                        <li>
+                            <a href="https://devseed-dev.firebaseapp.com/" target="_blank" data-page="_blank">Maps</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="home" class="page active">
+
+        <div class="jumbotron subhead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Ebola response roadmap</h1>
+                        <p>The roadmap aims to guide and coordinate the international response to the outbreak of Ebola virus disease in west Africa.</p>
+                        <p>The goal is to stop Ebola transmission in affected countries within 6-9 months and prevent international spread.</p>
+                        <p style="z-index: 999;"><a href="http://apps.who.int/iris/bitstream/10665/131596/1/EbolaResponseRoadmap.pdf?ua=1" target="_blank" class="btn btn-default btn-lg">Download the roadmap</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/jumbotron_1.jpg" style="width: 100%;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-lead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="icon">
+                                <i class="fa fa-question"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4>What is Ebola?</h4>
+                                <p style="text-align: center;">
+                                    Ebola is a rare and deadly disease caused by infection with one of
+                                    the Ebola virus strains (Zaire, Sudan, Bundibugyo, or Tai Forest virus). Ebola viruses are found in several
+                                    African countries. Ebola was discovered in 1976 near the Ebola River
+                                    in what is now the Democratic Republic of the Congo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4>Current Outbreak</h4>
+                                <p style="text-align: center;">
+                                    The outbreak of Ebola in West Africa is unprecedented in its scale,
+                                    severity, and complexity. The severely affected countries are struggling
+                                    to control the escalating outbreak against a backdrop of weak
+                                    health systems, significant deficits in capacity, and rampant fear.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="icon">
+                                <i class="fa fa-wrench"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4>What can be done?</h4>
+                                <p style="text-align: center;">
+                                    Strengthen human resource, and response capacities in areas of intense and widespread transmission.
+                                    Ensure emergency and immediate response in countries with an initial case(s) or with
+                                    localized transmission. Strengthen preparedness of all countries to rapidly detect
+                                    and respond to an Ebola.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div>
+                    <h2 class="section-title">Where is the outbreak?</h2>
+                    <div>
+                        <h4>Countries most affected</h4>
+                        <p class="lead">
+                            The map below shows the West African countries of Guinea, Liberia and Sierra Leone which are the most severely affected. New cases are now appearing in Nigeria and Senegal. All countries with land borders to the affected countries are at risk.
+                        </p>
+                        <img src="img/map_global.png" style="width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
+                    </div>
+                    <br />
+                    <div>
+                        <h4>Countries with widespread and intense transmission</h4>
+                        <p>
+                            The map below shows the location of cases throughout the countries with most intense transmission, differentiating the cumulative number of cases to date in each area from the number of cases that have occurred within the past 21 days. The dark red circles show that a large percentage of cases occurred in the 21 days preceding 14 September 2014. Nine districts in which previous cases were confirmed have reported no cases during the 21 days prior to the end of 14 September (six districts in Guinea, one in Sierra Leone, and two in Liberia). Two previously uninfected areas reported initial cases during the seven days prior to the end of 14 September. In Guinea, there has been one suspected case and one confirmed case in the Dalaba area. In Liberia, four probable and two suspected cases have now been reported in the Maryland area, which borders Côte d’Ivoire.
+                        </p>
+                        <img src="img/map_district.png" style="width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+
+                <h2 class="section-title">How many people are affected?</h2>
+                <p>
+                    The total number of probable, confirmed and suspected cases in the current outbreak of Ebola virus disease (Ebola) in West Africa was 5335, with 2622 deaths, as at the end of 14 September 2014. Countries affected are Guinea, Liberia, Nigeria, Senegal and Sierra Leone. The charts below show the total number of cases by country that have been reported in each epidemiological week between the start of 30 December 2013 (start of epidemiological week 1) and end 14 September 2014 (end of epidemiological week 37). 
+                    The latest information on cases and deaths can be found on the <a href="http://www.who.int/csr/don/en/" target="_blank">WHO Disease Outbreak News</a>.
+                </p>
+                <div>
+                    <br />
+                    <h4>Cases by country as at 14 September 2014</h4>
+                    <br />
+                    <img src="img/chart.png" style="border: 1px none #ccc; width: 100%;" />
+                </div>
+                <div>
+                    <br />
+                    <h4>Current assessment</h4>
+                    <br />
+                    <ul>
+                        <li>
+                            The upward trend in the epidemic continues in the three countries that have widespread and intense transmission (Guinea, Liberia, and Sierra Leone). The surge in Liberia being driven primarily by a continued increase in the number of cases reported in the capital, Monrovia. 
+                        </li>
+                        <li>
+                            In Guinea the number of newly reported cases in week 37 (or date) has not increased (there has been a slight drop compared with the previous week, figure 2). This is largely attributable to a fall in the number of cases from Macenta, which borders Gueckedou, the origin of the outbreak. Transmission in the capital Conakry is sustained. In contrast with Liberia and Sierra Leone, several districts have not reported any cases (primarily in the north of the country), or have no newly reported cases in epidemiological week 37 (primarily in the north-east of the country). However, there is no indication of any down-turn in the epidemic in Guinea.
+                        </li>
+                        <li>
+                            In Liberia continues the number of newly reported cases is still rising week on week, primarily driven by a continuation of the recent surge in cases in the capital, Monrovia (figure 3). The number of new cases reported from Lofa county, which borders the Guinean districts of Macenta and Gueckedou, has not increased in week 37 though it is too soon to say whether incidence has stabilized in Lofa. In the past few months, staff from WHO, US CDC and other partners have been working closely with the Liberian Ministry of Health to improve data collection and to integrate sources of data to provide the best possible picture of this rapidly evolving outbreak. Some of this work includes consolidating several different databases and cross-checking numbers of cases reported by the Government of Liberia against cases from laboratory test results. During this process, many cases previously classified as probable and suspected are being reclassified, while at the same time up to 100 previously unreported cases have been found. These new figures will be published soon, and will reflect significant improvements in data collection, and therefore provide a more accurate understanding of the situation. Liberia remains the country worst affected by the epidemic.
+                        </li>
+                        <li>
+                            In Sierra Leone the The incidence of EVD in Sierra Leone is still rising, with over 200 new cases reported in the past week (figure 4). Transmission remains high in the capital, Freetown, and the surrounding urban areas. The numbers of newly reported cases appear to have stabilised in Kailahun and Kenema, but a number of other districts have reported an increase in the number of new cases over the past week: Port Loko (a district adjacent to Freetown), Bo, Bombali, and Tonkolili.
+                        </li>
+                        <li>
+                            Infections among healthcare workers are a particularly alarming feature of this outbreak. To date, 318 healthcare workers have developed the disease, almost half of whom have died (table 2). WHO is working to ensure the safest conditions possible for staff deployed to the field and any health-care workers providing care to patients with Ebola.
+                        </li>
+                        <li>
+                            Infection prevention and control (IPC) measures in affected countries must be strengthened. The distribution of hand hygiene stations needs to be increased in healthcare settings and throughout communities in the affected countries. Water and soap are still unavailable in some areas. Alcohol-based hand-rub solutions (hand sanitizers) need to be procured and distributed on a large scale. WHO has received a number of donations from companies producing alcohol-based hand-rubs, which should reach affected countries soon.
+                        </li>
+                        <li>
+                            WHO is finalizing an IPC training strategy, and a work plan is being developed accordingly. Technical support is continuously provided for training, including for the training of trainers in African countries. New training materials have been developed. Several IPC training workshops have been or are being organized in Liberia, Republic of the Congo, Sierra Leone, and Zimbabwe. Collaboration is ongoing with US CDC on the Safety Training Course for Healthcare Workers Going to West Africa in Response to the 2014 Ebola Outbreak. A presentation on “Key measures for the prevention and control of Ebola virus disease” by the WHO IPC expert Dr Sergey Eremin will be broadcast on the 16 September through Webber Training.  
+                        </li>
+                        <li>
+                            Two countries, Nigeria and Senegal, have now reported a case or cases imported from a country with wide spread and intense transmission (table 3). In Nigeria, all cases in the transmission chain are linked to a single person who travelled from Liberia to Lagos on 20 July. Among the contacts of this case-patient, one person travelled to Port Harcourt and was the source of further local transmission; this transmission is at present limited to four cases. As a top priority, contact follow-up, supported by the highest authorities, has been implemented in Lagos and Port Harcourt. In Lagos, 347 contacts have now completed 21-day follow-up, and 4 contacts are still being monitored. In Port Harcourt, 164 contacts have now completed 21-day follow-up, and 359 contacts are still being monitored. In Senegal, one person, who travelled by road from Guinea to Dakar on 20 August, tested positive for Ebola on 27 August. 74 contacts are being followed-up, none of whom have tested positive for EVD so far. 
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="section section-action">
+            <div class="container">
+                <h2 class="section-title">What needs to be done?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="icon">1</div>
+                            <div class="media-body">
+                                <h4>Achieve full geographic coverage with Ebola response activities in countries with widespread and intense transmission</h4>
+                                <ul>
+                                    <li>Apply full Ebola intervention package to the extent of available resources</li>
+                                    <li>Develop and apply complementary approaches for intense transmission areas</li>
+                                    <li>Assess short-term extraordinary measures to limit national spread</li>
+                                    <li>Implement WHO’s Temporary Recommendations under IHR to prevent international spread</li>
+                                    <li>Ensure essential services and lay the foundation for health sector recovery and strengthening of national core capacities for outbreak response</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="icon">2</div>
+                            <div class="media-body">
+                                <h4>Ensure emergency and immediate action in countries with an initial case(s) or with localized transmission</h4>
+                                <ul>
+                                    <li>Initiate emergency health procedures</li>
+                                    <li>Immediately activate Ebola response protocols and facilities, in keeping with WHO IPC guidance and universal precautions</li>
+                                    <li>Implement IHR Temporary Recommendations to prevent international spread</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="icon">3</div>
+                            <div class="media-body">
+                                <h4>Strengthen preparedness of all countries to rapidly detect and respond to an Ebola exposure</h4>
+                                <ul>
+                                    <li>Establish active surveillance for clusters of unexplained deaths or febrile illness</li>
+                                    <li>Provide the general public with accurate and relevant information to reduce the risk of exposure</li>
+                                    <li>Establish a protocol for managing travellers who arrive at major land crossing points with unexplained febrile illness</li>
+                                    <li>Identify isolation units where any suspect Ebola case can be properly investigated and managed</li>
+                                    <li>Arrange a process for rapidly shipping diagnostic specimens to a WHO-recognized laboratory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="response" class="page">
+
+        <div class="jumbotron subhead">
+            <div class="container">
+                <h1>Response operations</h1>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="section-title">Countries with widespread and intense transmission </h2>
+                <p class="lead" style="text-align: left;">
+                    In countries with widespread and intense transmission the objective is to achieve full geographic coverage with complementary Ebola response
+                    activities. The
+                    key milestone is to reverse the trend in new cases and infected areas within 3 months, stop
+                    transmission in capital cities and major ports, and stop all residual transmission within 6-9 months.
+
+                </p>
+                <div>
+                    <p>
+                        The map below shows the status of the emergency response operations in the countries with widespread and intense transmission as at 14 September 2014. The map shows for each affeted location the status of the relevant Ebola intervention activities such as treatment centers, contact tracing, safe burial, laboratory testing and social mobilisation.
+                    </p>
+                    <br />
+                    <img src="img/map_response2.jpg" style="width: 100%; border: 1px solid #ccc; border-radius: 10px; padding: 40px;" />
+                </div>
+                <br />
+                <div>
+                    <h4>Current response status</h4>
+                    <ul>
+                        <li>
+                            Three laboratories are active in Guinea, and currently have sufficient capacity to meet demand in terms of quantity of cases and geographical coverage. Laboratory capacity in Liberia will need to be reassessed when new Ebola treatment centres open in Monrovia. In Sierra Leone, the high case load in Bombali and the western part of the country may necessitate the deployment of an additional mobile laboratory. In Kailahun district, the Public Health Agency of Canada has resumed its activities in coordination with the MSF ETC in the area. In Kenema, the CDC team-1 laboratory is testing samples from Kenema and Bo districts. In Freetown, the NICD Mobile Lab is testing samples from Freetown and the western part of the country.
+                        </li>
+                        <li>
+                            Efforts are being made to increase the number of safe burial teams, but the workload remains too high. In Liberia, the workload is overwhelming, with teams having to carry out around between 10 and 15 burials each day. Six new teams are being trained to add to the existing six teams. 
+                        </li>
+                        <li>
+                            Social Mobilization teams continue to be actively engaged in implementing Ebola response strategies in the three intense-transmission countries. In Sierra Leone, the focus is on providing intense training to outreach teams (about 28,500 people) that will be going house-to-house covering 1.5 million households between 19 September and 21 September 2014, to listen to community concerns, provide appropriate knowledge about Ebola transmission, prevention, care and treatment, and to encourage families to take sick patients to treatment or observation facilities.
+                        </li>
+                        <li>
+                            In Liberia, the renewed focus is on community engagement strategies as part of the planned Ebola/Community Care Units that will be set up at a district and sub-district level. The social mobilisation teams are also assessing common indicators to monitor and map related activities in each country.
+                        </li>
+                        <li>
+                            In addition to the domains above, work is ongoing to provide short-term capacity to address critical gaps in essential services. The World Food Programme (WFP) has delivered 3000 metric tonnes of food for 147,500 people since April 2014. The United Nations Humanitarian Air Service (UNHAS), managed by WFP, has so far transported 290 responders with two planes and one helicopter. WFP and the logistics cluster facilitated the transport of 400 m3 of medical cargo. WFP is also providing engineering and logistics support to WHO for the construction of new Ebola Treatment Centres (500 beds in total).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="section-title">Countries with initial cases or localized transmission</h2>
+                <p class="lead">
+                    In countries with initial cases or localized transmission the objective is to ensure emergency and immediate application of comprehensive Ebola
+                    response interventions. The key milestone is to stop all transmission within 8 weeks of index case.
+                </p>
+                <div>
+                    <ul>
+                        <li>
+                            In Nigeria, all cases in the transmission chain are linked to a single person who travelled from Liberia to Lagos on 20 July. Among the contacts of this case, one person travelled to Port Harcourt and was the source of further local transmission; this transmission is at present limited to four cases. As a top priority, contact follow-up, supported by the highest authorities, has been implemented in Lagos and Port Harcourt.
+                        </li>
+                        <li>
+                            In Senegal, one person, who travelled by road from Guinea to Dakar on 20 August, tested positive for EVD on 27 August. 67 contacts are being followed-up; none of these have tested positive so far.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="section-title">Strengthen preparedness</h2>
+                <p class="lead">
+                    A second meeting of the Emergency Committee convened by the Director-General under the International Health Regulations (2005) [IHR (2005)] regarding the 2014 Ebola outbreak in West Africa has begun discussion via email this week. The meeting will review the status of the outbreak as a public health emergency of international concern, and assess the impact of current temporary measures to contain the outbreak and reduce international spread.
+                </p>
+                <p class="lead">
+                    WHO and a range of partners are supporting the development of Ebola surveillance, preparedness and response plans in all non-affected African countries. Priority activities include active surveillance for clusters of unexplained death due to fever; provision of information to the general public and travellers; the identification of isolation units; provision of verified access to a WHO-accredited laboratory; and the establishment of a strategy for identifying and monitoring contacts of any suspected case.
+                </p>
+                <p class="lead">
+                    Work is ongoing to strengthen laboratory capacity in the WHO African region, including a collaboration between all members of the Emerging and Dangerous Pathogen Laboratory Network in the WHO African region that has now mapped the location and capacity of all laboratories able to test for Ebola infection. Logistical systems for sample shipment and the procurement of essential reagents and supplies, including Ebola-positive controls, are now in place at key locations.
+                </p>
+                <p class="lead">
+                    WHO is monitoring daily travel, trade, and transport measures adopted in response to Ebola, and together with international partners has established an international travel and transport task force to provide a coordinated international response, and to monitor the situation and provide timely information to the maritime and aviation sectors.
+                </p>
+            </div>
+        </div>
+
+        <!--<div class="section">
+            <div class="container">
+                <h2 class="section-title">Major issues to operationalize the roadmap</h2>
+                <p class="lead" style="text-align: left;">
+                </p>
+            </div>
+        </div>-->
+
+    </div>
+
+    <div id="resources" class="page">
+
+        <div class="jumbotron subhead">
+            <div class="container">
+                <h1>Funding and resource requirements</h1>
+            </div>
+        </div>
+
+        <div class="section section-lead">
+            <div class="container">
+
+                <h2 class="section-title">Estimated costs</h2>
+                <p class="lead">
+                    The overview of resources requirements presents a consolidated view of the estimated US$975 million global resources required
+                    over the next six months – by national governments, UN agencies and other partners
+                    – for the health response to stop Ebola transmission. The estimated requirements for WHO to carry out 
+                    its core functions of coordination and crisis management are US$60 million. Contributors are also providing 
+                    funds to WHO for additional field personnel and procurement of supplies and equipment, and requesting 
+                    WHO to manage funds that will be passed through to countries and partners. The table below presents 
+                    estimates of US$105 million and US$95 million for each of these latter two categories, bringing to US$260 
+                    million the amount of Ebola response funds that may flow through WHO.
+                </p>
+                <!--<p class="lead">
+                    This indicative budget does not include the
+                    costs of broader support for essential services in the countries worst affected, nor the costs of
+                    health systems recovery and strengthening in these areas.
+                </p>-->
+                <br />
+                <br />
+                <table class="table table-bordered" style="border-top: none; border-bottom: none;">
+                    <tr>
+                        <th rowspan="2" style="text-align: left;">Mission critical action</th>
+                        <th rowspan="2" style="width: 15%;">Total estimated<br />resource requirement<br />(USD)</th>
+                        <th rowspan="2" class="hidden-xs" style="background: #fff; border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;"></th>
+                        <th colspan="4" class="hidden-xs">Estimated resources to be implemented through WHO (USD)</th>
+                    </tr>
+                    <tr>
+                        <th style="width: 15%;" class="hidden-xs">Crisis management and coordination</th>
+                        <th style="width: 15%;" class="hidden-xs">Procurement and response teams</th>
+                        <th style="width: 15%;" class="hidden-xs">Managed funds for countries and partners</th>
+                        <th style="width: 15%;" class="hidden-xs">Total implemented <br />through WHO</th>
+                    </tr>
+
+
+                    <tr>
+                        <td>1. Identify and trace people with Ebola</td>
+                        <td style='text-align: center;'>189,500,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>14,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>35,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>24,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>73,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2. Safe and dignified burials </td>
+                        <td style='text-align: center;'>23,800,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>2,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>5,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>3,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>10,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3. Care for persons with Ebola and infection control</td>
+                        <td style='text-align: center;'>331,200,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>25,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>40,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>40,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>105,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>4. Medical care for responders</td>
+                        <td style='text-align: center;'>14,000,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>10,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>10,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>5. Provision of food security and nutrition</td>
+                        <td style='text-align: center;'>107,000,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>6. Access to basic (including non-Ebola health) services</td>
+                        <td style='text-align: center;'>97,100,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>3,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>18,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>15,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>36,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>7. Cash incentives for workers</td>
+                        <td style='text-align: center;'>2,500,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>8. Recovery and economy</td>
+                        <td style='text-align: center;'>64,800,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>9. Reliable supply lines for materials and equipment</td>
+                        <td style='text-align: center;'>42,600,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>10. Transport and fuel</td>
+                        <td style='text-align: center;'>23,400,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>11.  Social mobilization and community engagement</td>
+                        <td style='text-align: center;'>45,800,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>2,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>2,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>4,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>8,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>12. Messaging</td>
+                        <td style='text-align: center;'>3,200,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>2,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>2,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Multi-Facted/Preparedness </td>
+                        <td style='text-align: center;'>30,500,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center;' class='hidden-xs'>2,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>5,000,000</td>
+                        <td style='text-align: center;' class='hidden-xs'>9,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>16,000,000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Total</td>
+                        <td style='text-align: center; font-weight: bold;'>975,400,000</td>
+                        <td style='border: none; border-left: solid 1px #eee; border-right: solid 1px #eee;' class='hidden-xs'></td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>60,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>105,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>95,000,000</td>
+                        <td style='text-align: center; font-weight: bold;' class='hidden-xs'>260,000,000</td>
+                    </tr>
+
+
+
+
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="section-title">Resources available to WHO</h2>
+                <!--<ul class="nav nav-tabs nav-tabs-lg">
+                    <li class="active">
+                        <a href="#allocation_obj_tab" data-toggle="tab">By Objective</a>
+                    </li>
+                    <li class="">
+                        <a href="#allocation_loc_tab" data-toggle="tab">By Location</a>
+                    </li>
+                </ul>-->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="allocation_obj_tab">
+                        <div id="allocation_obj" class="mychart -tabs"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-lead">
+            <div class="container">
+                <h2 class="section-title">Contributions to the response</h2>
+                <!--<ul class="nav nav-tabs nav-tabs-lg">
+                    <li class="active">
+                        <a href="#resources_available_tab" data-toggle="tab">Contributions to the roadmap</a>
+                    </li>
+                    <li class="">
+                        <a href="#resources_available_who_tab" data-toggle="tab">Contributions received prior to September 2014</a>
+                    </li>
+                </ul>-->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="resources_available_tab" -style="padding: 40px 20px 20px 20px; border-radius: 0 0 10px 10px; border: 1px solid #ddd; border-top: none">
+                        <table class="table table-bordered" style="border-top: none; border-bottom: none;">
+                            <tr>
+                                <th style="text-align: left;">Contributors</th>
+                                <th style="text-align: center; width: 12%;" class='hidden-xs'>Crisis management and coordination</th>
+                                <th style="text-align: center; width: 12%;" class='hidden-xs'>Procurement and response teams</th>
+                                <th style="text-align: center; width: 12%;" class='hidden-xs'>Managed funds for countries and partners</th>
+                                <th style="text-align: center; width: 12%;" class='hidden-xs'>Funding allocation to be decided</th>
+                                <th style="text-align: center; width: 12%; font-weight: bold;">Total</th>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;' class='row-header'>Funds received (USD)</td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right; font-weight: bold;' class='row-header'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left; font-weight: bold;'>Member State contributions</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Andorra*</td>
+                                <td style='text-align: right;'>8,021</td>
+                                <td style='text-align: right;'>12,032</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>20,053</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Australia - Department of Foreign Affairs and Trade </td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>466,853</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>466,853</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Canada - Department of Foreign Affairs, Trade and Development (DFATD)*</td>
+                                <td style='text-align: right;'>367,309</td>
+                                <td style='text-align: right;'>550,964</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>918,274</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Finland</td>
+                                <td style='text-align: right;'>267,379</td>
+                                <td style='text-align: right;'>401,069</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>668,448</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Germany*</td>
+                                <td style='text-align: right;'>534,759</td>
+                                <td style='text-align: right;'>802,139</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,336,898</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Japan</td>
+                                <td style='text-align: right;'>340,000</td>
+                                <td style='text-align: right;'>510,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>850,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Kuwait*</td>
+                                <td style='text-align: right;'>2,000,000</td>
+                                <td style='text-align: right;'>3,000,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>5,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Luxembourg*</td>
+                                <td style='text-align: right;'>53,476</td>
+                                <td style='text-align: right;'>80,213</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>133,689</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Norway*</td>
+                                <td style='text-align: right;'>638,570</td>
+                                <td style='text-align: right;'>957,854</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,596,424</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Republic of Korea*</td>
+                                <td style='text-align: right;'>180,000</td>
+                                <td style='text-align: right;'>270,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>450,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Sweden</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>900,000</td>
+                                <td style='text-align: right; font-weight: bold;'>900,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>The United States of America - USAID*</td>
+                                <td style='text-align: right;'>2,560,000</td>
+                                <td style='text-align: right;'>3,840,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>6,400,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left; font-weight: bold;'>Non-Member State contributions</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Development Bank -  Strengthening West Africa’s Public Health Systems Response to the Ebola Crisis (SWAPHS)*</td>
+                                <td style='text-align: right;'>15,458,900</td>
+                                <td style='text-align: right;'>23,188,350</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>38,647,250</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Development Bank -  Liberia</td>
+                                <td style='text-align: right;'>572,000</td>
+                                <td style='text-align: right;'>428,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Development Bank - Sierra Leone</td>
+                                <td style='text-align: right;'>550,600</td>
+                                <td style='text-align: right;'>449,400</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Development Bank - Nigeria</td>
+                                <td style='text-align: right;'>604,100</td>
+                                <td style='text-align: right;'>395,900</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Development Bank - Guinea</td>
+                                <td style='text-align: right;'>411,500</td>
+                                <td style='text-align: right;'>588,500</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>BHP Billiton*</td>
+                                <td style='text-align: right;'>160,000</td>
+                                <td style='text-align: right;'>240,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>400,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Bill & Melinda Gates Foundation*</td>
+                                <td style='text-align: right;'>452,000</td>
+                                <td style='text-align: right;'>678,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,130,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Bill & Melinda Gates Foundation</td>
+                                <td style='text-align: right;'>1,600,000</td>
+                                <td style='text-align: right;'>2,400,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>4,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>CERF - Nigeria</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>1,063,443</td>
+                                <td style='text-align: right; font-weight: bold;'>1,063,443</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>
+                                    European Commission
+                                    Directorate-General Humanitarian Aid and Civil Protection (ECHO)
+                                </td>
+                                <td style='text-align: right;'>267,380</td>
+                                <td style='text-align: right;'>401,069</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>668,449</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>OPEC Fund for International Development (OFID)*</td>
+                                <td style='text-align: right;'>200,000</td>
+                                <td style='text-align: right;'>300,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>500,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left; font-weight: bold;'>Sub-total funds received</td>
+                                <td style='text-align: right; font-weight: bold;'>27,225,992</td>
+                                <td style='text-align: right; font-weight: bold;'>39,960,344</td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,963,443</td>
+                                <td style='text-align: right; font-weight: bold;'>69,149,779</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;' class='row-header'>Firm pledges (USD)</td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right; font-weight: bold;' class='row-header'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left; font-weight: bold;'>Member State contributions</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Australia - Department of Health</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>466,853</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>466,853</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Australia - Department of Foreign Affairs and Trade </td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>2,334,267</td>
+                                <td style='text-align: right; font-weight: bold;'>2,334,267</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Canada - Public Health Agency of Canada (PHAC)</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>169,881</td>
+                                <td style='text-align: right; font-weight: bold;'>169,881</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Estonia</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>66,845</td>
+                                <td style='text-align: right; font-weight: bold;'>66,845</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Germany</td>
+                                <td style='text-align: right;'>4,812,834</td>
+                                <td style='text-align: right;'>7,219,252</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>12,032,086</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Germany -the Federal Foreign Office </td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>6,684,492</td>
+                                <td style='text-align: right; font-weight: bold;'>6,684,492</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>India</td>
+                                <td style='text-align: right;'>500,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>500,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Sweden</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>4,297,994</td>
+                                <td style='text-align: right; font-weight: bold;'>4,297,994</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>United Kingdom of Great Britain & Northern Ireland – the Scottish Government</td>
+                                <td style='text-align: right;'>337,838</td>
+                                <td style='text-align: right;'>506,757</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>844,595</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>Qatar</td>
+                                <td style='text-align: right;'>400,000</td>
+                                <td style='text-align: right;'>600,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>1,000,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left; font-weight: bold;'>Non-Member State contributions</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Development Bank -  Strengthening West Africa’s Public Health Systems Response to the Ebola Crisis (SWAPHS) Future tranches</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>17,352,751</td>
+                                <td style='text-align: right; font-weight: bold;'>17,352,751</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>African Union</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>700,000</td>
+                                <td style='text-align: right; font-weight: bold;'>700,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>World Bank – Guinea </td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>2,300,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>2,300,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>World Bank – Liberia</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>2,900,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>2,900,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'>World Bank – Sierra Leone </td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'>2,800,000</td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'>2,800,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left; font-weight: bold;'>Sub-total firm pledges</td>
+                                <td style='text-align: right; font-weight: bold;'>6,050,672</td>
+                                <td style='text-align: right; font-weight: bold;'>16,792,862</td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                                <td style='text-align: right; font-weight: bold;'>31,606,230</td>
+                                <td style='text-align: right; font-weight: bold;'>54,449,764</td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right;'></td>
+                                <td style='text-align: right; font-weight: bold;'></td>
+                            </tr>
+
+
+                            <tr>
+                                <td style='text-align: left;' class='row-header'>Total funds received and firm pledges</td>
+                                <td style='text-align: right;' class='row-header'>33,276,664</td>
+                                <td style='text-align: right;' class='row-header'>56,753,205</td>
+                                <td style='text-align: right;' class='row-header'></td>
+                                <td style='text-align: right;' class='row-header'>33,569,673</td>
+                                <td style='text-align: right; font-weight: bold;' class='row-header'>123,599,543</td>
+                            </tr>
+
+
+                        </table>
+                        <p>*Estimated current distribution of funds which can be of used flexibly to address the response needs</p>
+                        <p><a href="#" data-toggle="modal" data-target="#funds_prior">Funds received for the Ebola response March to August 2014 prior to launch of roadmap</a></p>
+                    </div>
+                    <div class="tab-pane fade" id="resources_available_all_tab" style="padding: 40px 20px 20px 20px; border-radius: 0 0 10px 10px; border: 1px solid #ddd; border-top: none">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="/about/copyright/en/">© <acronym title="World Health Organization">WHO</acronym> 2013</a></li>
+                <li class="muted">·</li>
+                <li><a href="http://www.who.int/about/privacy/en/index.html">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="funds_prior" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Funds received for the Ebola response March to August 2014 prior to launch of roadmap</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered" style="border-top: none; border-bottom: none;">
+                        <tr>
+                            <th style="text-align: left;">Contributions (USD)</th>
+                            <th style="text-align: center; width: 25%; font-weight: bold;">Total</th>
+                        </tr>
+
+                        <tr>
+                            <td style='text-align: left;'>Italy</td>
+                            <td style='text-align: right;'>275,103</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Canada - Public Health Agency of Canada (PHAC)</td>
+                            <td style='text-align: right;'>182,482</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Central Emergency Response Fund</td>
+                            <td style='text-align: right;'>519,313</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Estonia</td>
+                            <td style='text-align: right;'>13,755</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>
+                                European Commission
+                                Directorate-General Humanitarian Aid and Civil Protection (ECHO)
+                            </td>
+                            <td style='text-align: right;'>550,206</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Japan</td>
+                            <td style='text-align: right;'>300,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Republic of Korea</td>
+                            <td style='text-align: right;'>50,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Rio Tinto Guinea</td>
+                            <td style='text-align: right;'>100,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>African Development Bank</td>
+                            <td style='text-align: right;'>2,766,252</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Canada - Department of Foreign Affairs, Trade and Development (DFATD)</td>
+                            <td style='text-align: right;'>319,344</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Germany</td>
+                            <td style='text-align: right;'>553,250</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Société Anglogold Ashanti de Guinée (SAG)</td>
+                            <td style='text-align: right;'>25,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Société des mines de fer de guinée  (SMFG)</td>
+                            <td style='text-align: right;'>25,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Central Emergency Response Fund</td>
+                            <td style='text-align: right;'>103,608</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>
+                                European Commission
+                                Directorate-General Humanitarian Aid and Civil Protection (ECHO)
+                            </td>
+                            <td style='text-align: right;'>133,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>OAS Brazil</td>
+                            <td style='text-align: right;'>107,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>VALE International Holdings GmbH</td>
+                            <td style='text-align: right;'>100,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>VIVO Energy</td>
+                            <td style='text-align: right;'>28,200</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Central Emergency Response Fund</td>
+                            <td style='text-align: right;'>311,200</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>Republic of Korea</td>
+                            <td style='text-align: right;'>50,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>United Kingdom-Department For International Development (DFID)</td>
+                            <td style='text-align: right;'>340,136</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;'>United States Department of State</td>
+                            <td style='text-align: right;'>150,000</td>
+                        </tr>
+
+
+                        <tr>
+                            <td style='text-align: left;  font-weight: bold;'>Total</td>
+                            <td style='text-align: right; font-weight: bold;'>7,002,850</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs/jquery-1.8.3.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.animated-chart.js"></script>
+    <script src="js/libs/jquery.animateNumbers.js"></script>
+    <script src="js/libs/jquery.easing.1.3.js"></script>
+
+    <script type="text/javascript">
+
+        $("#navbar a").click(function () {
+            var page = $(this).attr("data-page");
+            if (page != "_blank") {
+                $(".page").removeClass("active");
+                $(this).addClass("active");
+                $("#" + page).addClass("active");
+            }
+        });
+
+        $(function () {
+            var data = [];
+            var labels = [];
+
+            labels.push("Crisis management and coordination");
+            data.push([26723, 6051, 27226]);
+            labels.push("Procurement and response teams");
+            data.push([48247, 16793, 39960]);
+            labels.push("Managed funds for countries and partners");
+            data.push([95000, 0, 0]);
+            labels.push("Funding allocatin to be decided");
+            data.push([-33569,31606,1963]);
+
+            $('#allocation_obj').animatedChart({
+                data: data,
+                label: labels,
+                legendTitle: "Funds received and firm pledges as at September 1, 2014 (USD '000)",
+                legend: [
+                    'Funding shortfall',
+                    'Projected funding',
+                    'Funds received'
+                ],
+                legendWidth: '100%',
+                style: ['data-gap', 'data-pfsa', 'data-vc'],
+                totalPrefix: '$',
+                barWidth: '25%',
+                barHeight: '300px',
+                chartType: 'column',
+                animateFrom: 1,
+                subTotalMax: 2,
+                showLegend: true
+            });
+        });
+
+
+    </script>
+</body>
+
+
+
+
+
+
+
+</html>

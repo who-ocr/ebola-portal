@@ -1,0 +1,152 @@
+﻿.nowrap {
+    white-space: nowrap;
+}
+.chart {
+    width: 100%;
+    padding: 20px 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+.chart a {
+    color: #444;
+    text-decoration: none;
+}
+.chart a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+.chart-content {
+    display: inline-block;
+}
+.chart-content-no-legend {
+    display: inline-block;
+    width: 100%;
+}
+.chart-legend {
+    display: inline-block;
+    margin: 20px 50px;
+    overflow: visible;
+    vertical-align: top;
+}
+.chart-legend table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.chart-legend td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+td.chart-legend-title {
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+td.chart-legend-background div {
+    width: 20px;
+    height: 20px;
+}
+td.chart-legend-label {
+    padding-left: 10px;
+    width: 100%;
+}
+td.chart-legend-sub-total {
+    text-align: right;
+    white-space: nowrap;
+}
+td.chart-legend-total {
+    text-align: right;
+    white-space: nowrap;
+    border-top: 1px solid #333;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.chart-item-col {
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+}
+.chart-item-col .item-total {
+    height: 25px;
+    background: #666;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+    padding: 2px;
+    overflow: hidden;
+}
+.chart-item-col .item-label {
+    padding-top: 5px;
+    background: #fff;
+}
+.chart-item-col .item-data {
+    margin: auto;
+    position:relative;
+    overflow:hidden;
+}
+.chart-item-col .item-label-animated {
+    padding-top: 5px;
+    background: #fff;
+    font-size: 180%;
+}
+.chart-item-bar {
+    text-align: left;
+}
+.chart-item-bar .item-label {
+    margin: 15px 0 5px 0;
+}
+.chart-item-bar .item-data {
+    margin-left: 0;
+    display: inline-block;
+    position:relative;
+}
+.chart-item-bar .item-data > * {
+    display: inline-block;
+    height: 20px;
+}
+.chart-item-bar .item-total {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 25px;
+    width: 70px;
+    -background: #444;
+    color: #444;
+    font-weight: bold;
+    padding: 2px;
+    overflow: hidden;
+    margin: -2px 0 0 40px;
+}
+.surplus {
+    opacity:0.7;
+    filter:alpha(opacity = 70);
+    position:absolute;
+    display:none !important;
+}
+.data-fill {
+    background: #fff;
+}
+.data-gap {
+    background: #eee;
+}
+.data-gap-dark {
+    background: #ddd;
+}
+.data-cf {
+    background: #437DD4;
+}
+.data-vc {
+    background: #284B7E;
+}
+.data-vc-new {
+    background: #0F4DA8;
+}
+.data-ac {
+    background: #FFB840;
+}
+.data-vc-3 {
+    background: #81a8e2;
+}
