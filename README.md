@@ -1,4 +1,5 @@
-ebola-portal
+WHO Ebola Portal
 ============
 
-WHO Ebola portal
+## Testing locally
+    python -m SimpleHTTPServer
